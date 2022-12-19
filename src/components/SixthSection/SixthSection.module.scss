@@ -1,0 +1,116 @@
+@use '/src/styles/constants' as c;
+@use '/src/styles/mixins' as m;
+
+.sixthSection {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .container {
+    padding: 250px 0px;
+    .firstContent {
+      max-width: 1140px;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      transform: translate3d(0px, 50px, 0px);
+      .innerContainer {
+        width: 92%;
+        max-width: calc(100% - 48px);
+        height: 100%;
+        margin: 0 auto;
+        .title {
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 1.3;
+          color: #3182f6;
+          margin-bottom: 30px;
+        }
+        .explation {
+          font-size: 50px;
+          font-weight: 700;
+          line-height: 1.4;
+          color: #191f28;
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .secondContent {
+      position: relative;
+      width: 100%;
+      margin-bottom: 12px;
+      .topContentWrapper {
+        position: relative;
+        width: 600px;
+        height: 936px;
+        margin: 0 auto;
+        .imageStock {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 57%;
+          height: auto;
+          transform: translate3d(-50%, -50%, 0);
+        }
+        .bottomImages {
+          position: absolute;
+          bottom: 124px;
+          left: 50%;
+          transform: translate3d(-50%, 0, 0);
+          .bottomImageWrapper {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: flex-start;
+            .bottomImage {
+              width: 178px;
+              height: 178px;
+              margin-left: 16px;
+            }
+          }
+        }
+      }
+      .textContentWrapper {
+        position: absolute;
+        top: 342px;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+        max-width: 900px;
+        padding-left: 20px;
+        .text {
+          font-size: 23px;
+          font-weight: 600;
+          line-height: 1.5;
+
+          color: rgb(51, 61, 75);
+          max-width: 220px;
+          transform: translate3d(0px, 50px, 0px);
+        }
+      }
+    }
+    .thirdContent {
+      max-width: 1140px;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      .contentWrapper {
+        width: 92%;
+        max-width: calc(100% - 48px);
+        height: 100%;
+        margin: 0 auto;
+        .text {
+          font-size: 23px;
+          font-weight: 600;
+          line-height: 1.5;
+          color: rgb(51, 61, 75);
+          text-align: center;
+          transform: translate3d(0px, 50px, 0px);
+        }
+      }
+    }
+  }
+}

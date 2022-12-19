@@ -1,0 +1,156 @@
+@use '/src/styles/constants' as c;
+@use '/src/styles/mixins' as m;
+
+.secondSection {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .container {
+    @include m.mediaMobile {
+      padding: 100px 0;
+    }
+    padding: 250px 0 165px 0;
+    max-width: 1140px;
+    margin: auto;
+    .innerContainer {
+      width: 92%;
+      max-width: calc(100% - 48px);
+      height: 100%;
+      margin: 0 auto;
+      .contents {
+        @include m.mediaMobile {
+          height: 100%;
+        }
+        position: relative;
+        height: 1272px;
+        .topText {
+          position: relative;
+          .title {
+            @include m.mediaMobile {
+              margin-bottom: 10px;
+              font-size: 18px;
+            }
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: #3182f6;
+            margin-bottom: 30px;
+          }
+          .explanation {
+            @include m.mediaMobile {
+              font-size: 28px;
+            }
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #191f28;
+          }
+        }
+        .iphoneImage {
+          @include m.mediaMobile {
+            transform: translate3d(calc(((650px - 100vw) * 0) - (650px - 100vw)), 0px, 0px);
+            position: relative;
+            display: flex;
+            width: max-content;
+            height: 587px;
+            margin-left: -24px;
+          }
+          .rightIphone {
+            @include m.mediaMobile {
+              position: static;
+              width: 100%;
+              max-width: 375px;
+              height: auto;
+              flex-shrink: 0;
+            }
+            width: 600px;
+            height: 936px;
+            position: absolute;
+            top: 0px;
+            right: -104px;
+            transform: translate3d(0, 50px, 0px);
+            .imageHome1 {
+              @include m.mediaMobile {
+                width: 214px !important;
+                height: 468px !important;
+              }
+              position: absolute !important;
+              top: 50% !important;
+              left: 50% !important;
+              width: 57% !important;
+              height: auto !important;
+              transform: translate3d(-50%, -50%, 0);
+            }
+            .imageIphoneShadow {
+              @include m.mediaMobile {
+                width: 375px !important;
+                height: 587px !important;
+              }
+              position: relative;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .leftIphone {
+            @include m.mediaMobile {
+              position: static;
+              margin-left: -100px;
+
+              width: 100%;
+              max-width: 375px;
+              height: auto;
+            }
+            width: 600px;
+            height: 936px;
+            position: absolute;
+            bottom: 0px;
+            left: -104px;
+            transform: translate3d(0, 50px, 0px);
+            .imageHome2 {
+              @include m.mediaMobile {
+                width: 214px !important;
+                height: 468px !important;
+              }
+              position: absolute !important;
+              top: 50% !important;
+              left: 50% !important;
+              width: 57% !important;
+              height: auto;
+              transform: translate3d(-50%, -50%, 0);
+            }
+            .imageIphoneShadow2 {
+              @include m.mediaMobile {
+                width: 375px !important;
+                height: 587px !important;
+              }
+              position: relative;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .bottomText {
+          @include m.mediaMobile {
+            position: static;
+            width: 100%;
+
+            font-size: 17px;
+          }
+          width: 400px;
+          font-size: 23px;
+          font-weight: 600;
+          line-height: 1.5;
+          color: rgb(51, 61, 75);
+
+          position: absolute;
+          right: 30px;
+          bottom: 166px;
+          transform: translate3d(0px, 50px, 0px);
+
+          word-break: keep-all;
+          white-space: pre-wrap;
+        }
+      }
+    }
+  }
+}

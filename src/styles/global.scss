@@ -1,0 +1,13 @@
+@import 'reset';
+@import 'base';
+@import 'libraries';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'toss';
+
+  word-break: keep-all;
+  white-space: pre-wrap;
+}
