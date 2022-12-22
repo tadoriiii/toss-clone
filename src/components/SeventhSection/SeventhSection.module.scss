@@ -2,6 +2,12 @@
 @use '/src/styles/mixins' as m;
 
 .seventhSection {
+  @include m.mediaMobile {
+    height: 655px;
+    background: url('https://static.toss.im/assets/homepage/newtossim/section2_4_big_mobile.png');
+    // background-size: contain;
+    background-repeat: no-repeat;
+  }
   position: relative;
   display: flex;
   flex-direction: row;
@@ -16,6 +22,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   .text {
+    @include m.mediaMobile {
+      font-size: 55px;
+    }
     font-size: 100px;
     font-weight: 700;
     line-height: 1.3;

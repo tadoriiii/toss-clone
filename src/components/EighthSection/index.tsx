@@ -22,8 +22,10 @@ const EighthSection: React.FC = () => {
               </div>
               <p className={styles.thirdText}>
                 건강검진, 국가장학금 신청, 교통범칙금·과태료 납부.
-                <p>그동안 종이로 받았던 문서들 꼼꼼히 챙기느라 고생했어요.</p>앞으로는 토스 내
-                문서함에서 간단히 받아보고 납부할 수 있어요.
+                <span className={styles.mobileText}>
+                  그동안 종이로 받았던 문서들 꼼꼼히 챙기느라 고생했어요.
+                </span>
+                앞으로는 토스 내 문서함에서 간단히 받아보고 납부할 수 있어요.
               </p>
             </div>
           </div>
@@ -44,8 +46,10 @@ const EighthSection: React.FC = () => {
                 <Image src={ImageInsu2} alt='imageInsu2' />
               </div>
               <p className={styles.text}>
-                또래보다 보험료는 적절하게 내고 있는지,<p>낸 만큼 보장받고 있는지 확인해 보세요.</p>
-                전문가와의 상담을 통해 내게 딱 맞는<p>보험을 추천 받고, 병원비를 간편하게</p>청구할
+                또래보다 보험료는 적절하게 내고 있는지,
+                <span className={styles.mobileText}>낸 만큼 보장받고 있는지 확인해 보세요.</span>
+                전문가와의 상담을 통해 내게 딱 맞는
+                <span className={styles.mobileText}>보험을 추천 받고, 병원비를 간편하게</span>청구할
                 수 있어요.
               </p>
             </div>

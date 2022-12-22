@@ -6,8 +6,14 @@
   width: 100%;
   overflow: hidden;
   .container {
+    @include m.mediaMobile {
+      padding: 100px 0;
+    }
     padding: 250px 0px;
     .firstContent {
+      @include m.mediaMobile {
+        transform: unset;
+      }
       max-width: 1140px;
       width: 100%;
       height: 100%;
@@ -19,6 +25,9 @@
         height: 100%;
         margin: 0 auto;
         .title {
+          @include m.mediaMobile {
+            margin-bottom: 10px;
+          }
           font-size: 28px;
           font-weight: 700;
           line-height: 1.3;
@@ -26,11 +35,28 @@
           margin-bottom: 30px;
         }
         .explation {
+          @include m.mediaMobile {
+            margin-bottom: 20px;
+            font-size: 28px;
+          }
           font-size: 50px;
           font-weight: 700;
           line-height: 1.4;
           color: #191f28;
           margin-bottom: 0px;
+        }
+        .mobileText {
+          @include m.mediaPC {
+            display: none;
+          }
+          font-size: 17px;
+          display: block;
+          font-weight: 600;
+          line-height: 1.5;
+          color: #333d4b;
+
+          word-break: keep-all;
+          white-space: pre-wrap;
         }
       }
     }
@@ -39,6 +65,11 @@
       width: 100%;
       margin-bottom: 12px;
       .topContentWrapper {
+        @include m.mediaMobile {
+          width: 100%;
+          max-width: 375px;
+          height: auto;
+        }
         position: relative;
         width: 600px;
         height: 936px;
@@ -52,6 +83,9 @@
           transform: translate3d(-50%, -50%, 0);
         }
         .bottomImages {
+          @include m.mediaMobile {
+            bottom: 83px;
+          }
           position: absolute;
           bottom: 124px;
           left: 50%;
@@ -62,6 +96,11 @@
             flex-direction: row;
             justify-content: flex-start;
             .bottomImage {
+              @include m.mediaMobile {
+                width: 100px;
+                height: 100px;
+                margin-left: 9px;
+              }
               width: 178px;
               height: 178px;
               margin-left: 16px;
@@ -70,6 +109,9 @@
         }
       }
       .textContentWrapper {
+        @include m.mediaMobile {
+          display: none;
+        }
         position: absolute;
         top: 342px;
         left: 50%;
@@ -109,6 +151,12 @@
           color: rgb(51, 61, 75);
           text-align: center;
           transform: translate3d(0px, 50px, 0px);
+          .mobileText {
+            @include m.mediaMobile {
+              display: block;
+            }
+            display: inline-block;
+          }
         }
       }
     }

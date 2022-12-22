@@ -6,6 +6,9 @@
   width: 100%;
   overflow: hidden;
   .container {
+    @include m.mediaMobile {
+      padding: 100px 0;
+    }
     position: relative;
     padding: 250px 0;
 
@@ -32,9 +35,15 @@
           width: 100%;
           height: 100%;
           .firstContent {
+            @include m.mediaMobile {
+              margin-bottom: 0px;
+            }
             margin-bottom: 210px;
             transform: translate3d(0px, 50px, 0px);
             .title {
+              @include m.mediaMobile {
+                margin-bottom: 10px;
+              }
               font-size: 28px;
               font-weight: 700;
               line-height: 1.3;
@@ -42,6 +51,9 @@
               margin-bottom: 20px;
             }
             .explanation {
+              @include m.mediaMobile {
+                font-size: 28px;
+              }
               font-size: 50px;
               font-weight: 700;
               line-height: 1.4;
@@ -52,6 +64,12 @@
             }
           }
           .secondContent {
+            @include m.mediaMobile {
+              position: static;
+              width: 100vw;
+              margin-left: -24px;
+              transform: unset;
+            }
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -63,6 +81,11 @@
 
             transform: translate3d(0, -50%, 0);
             .secondContentWrapper {
+              @include m.mediaMobile {
+                width: 100%;
+                max-width: 375px;
+                height: auto;
+              }
               position: relative;
               width: 600px;
               height: 936px;
@@ -83,6 +106,10 @@
             }
           }
           .thirdContent {
+            @include m.mediaMobile {
+              font-size: 28px;
+              line-height: 1.4;
+            }
             display: block;
             font-size: 48px;
             font-weight: 700;
@@ -91,6 +118,10 @@
             transform: translate3d(0px, 50px, 0px);
           }
           .fourthContent {
+            @include m.mediaMobile {
+              font-size: 28px;
+              line-height: 1.4;
+            }
             display: block;
             font-size: 48px;
             font-weight: 700;
@@ -102,6 +133,11 @@
             }
           }
           .fifthContent {
+            @include m.mediaMobile {
+              margin-bottom: 19px;
+              font-size: 28px;
+              line-height: 1.4;
+            }
             display: block;
             font-size: 48px;
             font-weight: 700;
@@ -114,6 +150,9 @@
             }
           }
           .sixthContent {
+            @include m.mediaMobile {
+              font-size: 17px;
+            }
             font-size: 23px;
             font-weight: 600;
             line-height: 1.5;

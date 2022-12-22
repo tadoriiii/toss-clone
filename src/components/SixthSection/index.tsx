@@ -23,6 +23,10 @@ const SixthSection: React.FC = () => {
             <h2 className={styles.explation}>
               투자,<p>모두가 할 수 있도록</p>
             </h2>
+            <p className={styles.mobileText}>
+              이해하기 쉬운 용어, 설명이 필요 없는 직관적인 화면 구성, 송금처럼 쉬운 구매 경험
+              그리고 투자 판단에 도움을 주는 콘텐츠까지
+            </p>
           </div>
         </div>
         <div className={styles.secondContent}>
@@ -72,7 +76,9 @@ const SixthSection: React.FC = () => {
           <div className={styles.contentWrapper}>
             <p className={styles.text}>
               별도 앱 설치 없이 토스에서 바로,
-              <p>토스증권으로 나만의 투자를 시작해 보세요.</p>
+              <p>
+                토스증권으로 <p className={styles.mobileText}>나만의 투자를 시작해 보세요.</p>
+              </p>
             </p>
           </div>
         </div>

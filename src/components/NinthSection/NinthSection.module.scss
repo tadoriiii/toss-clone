@@ -7,6 +7,9 @@
   overflow: hidden;
   background-color: #f9fafb;
   .container {
+    @include m.mediaMobile {
+      padding: 100px 0;
+    }
     padding: 250px 0;
 
     max-width: 1140px;
@@ -24,6 +27,10 @@
       .textWrapper {
         transform: translate3d(0px, 50px, 0px);
         .topText {
+          @include m.mediaMobile {
+            margin-bottom: 10px;
+            font-size: 18px;
+          }
           font-size: 28px;
           font-weight: 700;
           line-height: 1.3;
@@ -31,6 +38,10 @@
           margin-bottom: 20px;
         }
         .bottomText {
+          @include m.mediaMobile {
+            margin-bottom: 50px;
+            font-size: 28px;
+          }
           font-size: 50px;
           font-weight: 700;
           line-height: 1.4;
@@ -39,12 +50,21 @@
         }
       }
       .bottomContent {
+        @include m.mediaMobile {
+          flex-direction: column;
+          margin: 0px;
+        }
         display: flex;
         flex-wrap: wrap;
         margin: 0px -200px -100px 0px;
 
         transform: translate3d(0px, 50px, 0px);
         .contentWrapper {
+          @include m.mediaMobile {
+            max-width: none;
+            margin: 0;
+            margin-bottom: 50px;
+          }
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -54,6 +74,12 @@
           max-width: 350px;
           margin: 0 200px 100px 0;
           .iconWrapper {
+            @include m.mediaMobile {
+              width: 60px;
+              height: 60px;
+              border-radius: 16px;
+              margin-bottom: 16px;
+            }
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -65,12 +91,21 @@
             border-radius: 26px;
             margin-bottom: 30px;
             .icon {
+              @include m.mediaMobile {
+                height: 30px;
+                width: 30px;
+                min-width: 30px;
+              }
               height: 60px;
               width: 60px;
               min-width: 60px;
             }
           }
           .title {
+            @include m.mediaMobile {
+              font-size: 18px;
+              margin-bottom: 4px;
+            }
             width: 100%;
             margin-bottom: 6px;
             font-size: 20px;
@@ -79,6 +114,14 @@
             color: #333d4b;
           }
           .explation {
+            @include m.mediaMobile {
+              font-size: 17px;
+              font-weight: 600;
+              line-height: 1.5;
+              color: #8b95a1;
+
+              display: inline-block;
+            }
             width: 100%;
             font-size: 18px;
             font-weight: 500;
